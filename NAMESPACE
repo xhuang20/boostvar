@@ -1,0 +1,7 @@
+useDynLib(boostvar)
+import(RcppEigen)
+importFrom(Rcpp, evalCpp)
+S3method(coef,boostvar)
+S3method(predict,boostvar)
+importFrom("utils", "tail")
+exportPattern("^[[:alpha:]]+")

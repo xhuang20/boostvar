@@ -1,0 +1,512 @@
+b$varresult
+b2
+plot(a$aic)
+# Reshape the results.
+step = 400
+cbind(t((a$beta_mat)[,,1,step])[,1],t((a$beta_mat)[,,2,step])[,1],t((a$beta_mat)[,,1,step])[,2],t((a$beta_mat)[,,2,step])[,2])
+b1
+cbind(b1,b2)
+b$varresult
+step
+# Reshape the results.
+step = 500
+cbind(b1,b2)
+cbind(t((a$beta_mat)[,,1,step])[,1],t((a$beta_mat)[,,2,step])[,1],t((a$beta_mat)[,,1,step])[,2],t((a$beta_mat)[,,2,step])[,2])
+b$varresult
+cbind(t((a$p_mat)[,,1,step])[,1],t((a$p_mat)[,,2,step])[,1],t((a$p_mat)[,,1,step])[,2],t((a$p_mat)[,,2,step])[,2])
+summary(b)
+cbind(t((a$beta_mat)[,,1,step])[,1],t((a$beta_mat)[,,2,step])[,1],t((a$beta_mat)[,,1,step])[,2],t((a$beta_mat)[,,2,step])[,2])
+cbind(t((a$p_mat)[,,1,step])[,1],t((a$p_mat)[,,2,step])[,1],t((a$p_mat)[,,1,step])[,2],t((a$p_mat)[,,2,step])[,2])
+source("~/My Economics/Research/hdvar/program/testpkg/test_boostvar.R", echo=TRUE)
+# Reshape the results.
+step = 1000
+cbind(t((a$beta_mat)[,,1,step])[,1],t((a$beta_mat)[,,2,step])[,1],t((a$beta_mat)[,,1,step])[,2],t((a$beta_mat)[,,2,step])[,2])
+cbind(t((a$p_mat)[,,1,step])[,1],t((a$p_mat)[,,2,step])[,1],t((a$p_mat)[,,1,step])[,2],t((a$p_mat)[,,2,step])[,2])
+cbind(b1,b2)
+b1
+pnorm(b1)
+pnorm(0)
+pnorm(cbind(b1,b2))
+source("~/My Economics/Research/hdvar/program/testpkg/test_boostvar.R", echo=TRUE)
+library(boostvar)
+source("~/My Economics/Research/hdvar/program/testpkg/test_boostvar.R", echo=TRUE)
+source("~/My Economics/Research/hdvar/program/testpkg/test_boostvar.R", echo=TRUE)
+dim(p_mat)
+source("~/My Economics/Research/hdvar/program/testpkg/test_boostvar.R", echo=TRUE)
+k
+dim(p_mat)
+beta_mat[,,,k]
+step = k
+cbind(t((beta_mat)[,,1,step])[,1],t((beta_mat)[,,2,step])[,1],t((beta_mat)[,,1,step])[,2],t((beta_mat)[,,2,step])[,2])
+cbind(t((p_mat)[,,1,step])[,1],t((p_mat)[,,2,step])[,1],t((p_mat)[,,1,step])[,2],t((p_mat)[,,2,step])[,2])
+library(boostvar)
+source("~/My Economics/Research/hdvar/program/testpkg/test_boostvar.R")
+cbind(t((beta_mat)[,,1,step])[,1],t((beta_mat)[,,2,step])[,1],t((beta_mat)[,,1,step])[,2],t((beta_mat)[,,2,step])[,2])
+cbind(t((p_mat)[,,1,step])[,1],t((p_mat)[,,2,step])[,1],t((p_mat)[,,1,step])[,2],t((p_mat)[,,2,step])[,2])
+sig_mat[,,,k]
+sig_mat[,,min_ind,k]
+matrix(sqrt(kronecker(diag(sig2), diag(Q)) / n ),p,d)
+matrix(sqrt(kronecker(diag(sig2), diag(Q)) ),p,d)
+matrix(sqrt(diag(kronecker(sig2, Q)) ),p,d)
+sig2
+source("~/My Economics/Research/hdvar/program/testpkg/test_boostvar.R")
+matrix(sqrt(kronecker(diag(sig2), diag(Q)) / n ),p,d)
+print(Q)
+diag(sig2)
+diag(Q)
+matrix(sqrt(diag(sig2) / n ),p,d)
+2 * pnorm(-abs(beta_mat[,,min_ind,k] / sig_mat[,,min_ind,k]))
+2 * pnorm(-abs(beta_mat[,,min_ind,k] / matrix(sqrt(diag(sig2) / n ),p,d)))
+2 * pnorm(-abs(beta_mat[,,min_ind,k] / matrix(sqrt(diag(sig2) ),p,d)))
+min_ind
+2 * pnorm(-abs(beta_mat[,,min_ind,k] / matrix(sqrt(kronecker(diag(sig2), diag(Q)) / n ),p,d)))
+diag(Q)
+sqrt(diag(Q))
+diag(sig2)
+min_ind
+beta_mat[,,min_ind,k]
+beta_mat[,,2,k]
+sig_mat[,,2,k]
+nu
+A_array[,,1,]
+A_array[,,2,]
+min_list
+tail(A_array[,,2,])
+A_array[,,2,495:500]
+c_cumsum
+dim(c_cumsum)
+dim(c_cumsum[,,1])
+c_cumsum[,,1]
+c_cumsum[,,2]
+dim(c_cumsum)
+c_cumsum[,,2] %*% t(c_cumsum)
+c_cumsum[,,2] %*% t(as.matrix(c_cumsum))
+as.matrix(c_cumsum[,,2]) %*% t(as.matrix(c_cumsum))
+dim(c_cumsum[,,2])
+as.matrix(c_cumsum[,,2])
+as.matrix(c_cumsum[,,2]) %*% t(as.matrix(c_cumsum[,,2]))
+print(Q)
+as.matrix(c_cumsum[,,2]) %*% t(as.matrix(c_cumsum[,,2])) / n
+print(n)
+matrix(sqrt(kronecker(diag(sig2), diag(Q)) / n ),p,d)
+sqrt(kronecker(diag(sig2), diag(Q)) / n
+)
+sqrt(kronecker(diag(sig2), diag(Q)) / n )
+sig2
+t(y - B_mat %*% y) %*% (y - B_mat %*% y) / (n - df[k])
+t(y - B_mat %*% y) %*% (y - B_mat %*% y) / (n - df[k])
+df[k]
+t(res) %*% res / n
+diag(t(y - B_mat %*% y) %*% (y - B_mat %*% y) / (n - df[k]))
+sqrt(diag(t(y - B_mat %*% y) %*% (y - B_mat %*% y) / (n - df[k])))
+sqrt(kronecker(diag(sig2), diag(Q)) / n )
+diag(sig2)
+diag(Q)
+as.matrix(c_cumsum[,,2]) %*% t(as.matrix(c_cumsum[,,2])) / n
+min_ind
+as.matrix(c_cumsum[,,1]) %*% t(as.matrix(c_cumsum[,,1])) / n
+c_cumsum[,,1]
+matrix(sqrt(kronecker(diag(sig2), diag(Q)) / n ),p,d)
+2 * pnorm(-abs(beta_mat[,,min_ind,k] / sig_mat[,,min_ind,k]))
+2 * pnorm(-abs(beta_mat[,,min_ind,k] / sig_mat[,,min_ind,k] * n))
+2 * pnorm(-abs(beta_mat[,,min_ind,k] / sig_mat[,,min_ind,k] ))
+2 * pnorm(-abs(n * beta_mat[,,min_ind,k] / sig_mat[,,min_ind,k] ))
+2 * pnorm(-abs(beta_mat[,,min_ind,k] / sig_mat[,,min_ind,k] / n ))
+2 * pnorm(-abs(beta_mat[,,2,k] / sig_mat[,,2,k] / n ))
+2 * pnorm(-abs(beta_mat[,,2,k] / sig_mat[,,2,k] / n /n ))
+2 * pnorm(-abs(beta_mat[,,2,k] / sig_mat[,,2,k] / n  ))
+2 * pnorm(-abs(beta_mat[,,2,k] / sig_mat[,,2,k] / sqrt(n)  ))
+beta_mat[,,2,k]
+2 * pnorm(-abs(beta_mat[,,2,k] / sig_mat[,,2,k] / n  ))
+2 * pnorm(-abs(beta_mat[,,2,k] / sig_mat[,,2,k] / n / sqrt(n) ))
+2 * pnorm(-abs(beta_mat[,,2,k] / sig_mat[,,2,k] / n  ))
+2 * pnorm(-abs(beta_mat[,,2,k] / sig_mat[,,2,k]  ))
+2 * pnorm(-abs(beta_mat[,,2,k] / sig_mat[,,2,k]  ))
+2 * pnorm(-abs(beta_mat[,,2,k] / sig_mat[,,2,k] / sqrt(n) ))
+2 * pnorm(-abs(beta_mat[,,2,k] / sig_mat[,,2,k] / n ))
+library(boostvar)
+source("~/My Economics/Research/hdvar/program/testpkg/test_boostvar.R")
+cbind(t((beta_mat)[,,1,step])[,1],t((beta_mat)[,,2,step])[,1],t((beta_mat)[,,1,step])[,2],t((beta_mat)[,,2,step])[,2])
+if (k == 500) browser()
+cbind(t((p_mat)[,,1,step])[,1],t((p_mat)[,,2,step])[,1],t((p_mat)[,,1,step])[,2],t((p_mat)[,,2,step])[,2])
+library(boostvar)
+source("~/My Economics/Research/hdvar/program/testpkg/test_boostvar.R", echo=TRUE)
+source("~/My Economics/Research/hdvar/program/testpkg/test_boostvar.R", echo=TRUE)
+source("~/My Economics/Research/hdvar/program/testpkg/test_boostvar.R", echo=TRUE)
+step = 400
+cbind(t((a$beta_mat)[,,1,step])[,1],t((a$beta_mat)[,,2,step])[,1],t((a$beta_mat)[,,1,step])[,2],t((a$beta_mat)[,,2,step])[,2])
+cbind(t((a$p_mat)[,,1,step])[,1],t((a$p_mat)[,,2,step])[,1],t((a$p_mat)[,,1,step])[,2],t((a$p_mat)[,,2,step])[,2])
+rbind(b1,b2)
+cbind(b1,b2)
+pnorm(3.0)
+pnorm(-3.0)
+2*pnorm(-3.0)
+bb = summary(b)
+bb$varresult
+bb$varresult$y1$sigma
+bb$varresult$y1$coefficients
+bb$varresult$y2$coefficients
+bb$varresult
+source("~/My Economics/Research/hdvar/program/testpkg/test_boostvar.R", echo=TRUE)
+cbind(t((a$beta_mat)[,,1,step])[,1],t((a$beta_mat)[,,2,step])[,1],t((a$beta_mat)[,,1,step])[,2],t((a$beta_mat)[,,2,step])[,2])
+cbind(t((a$p_mat)[,,1,step])[,1],t((a$p_mat)[,,2,step])[,1],t((a$p_mat)[,,1,step])[,2],t((a$p_mat)[,,2,step])[,2])
+summary(b)
+source("~/My Economics/Research/hdvar/program/forecast/forecast.R")
+(a$beta_mat[,,,bstop])
+dim((a$beta_mat[,,,bstop]))
+a$min_list
+unique(a$min_list)
+length(unique(a$min_list))
+table(a$min_list)
+p_mat = a$p_mat
+p_mat[,,2,bstop]
+unique(a$min_list)
+table(a$min_list)
+p_mat[,,12,bstop]
+sum(re^2) / (28*40)
+sum(re^2) / (28)
+library(boostvar)
+source("~/My Economics/Research/hdvar/program/testpkg/test_boostvar.R", echo=TRUE)
+source("~/My Economics/Research/hdvar/program/testpkg/test_boostvar.R", echo=TRUE)
+source("~/My Economics/Research/hdvar/program/testpkg/test_boostvar.R", echo=TRUE)
+source("~/My Economics/Research/hdvar/program/testpkg/test_boostvar.R", echo=TRUE)
+a$p_mat
+source("~/My Economics/Research/hdvar/program/testpkg/test_boostvar.R", echo=TRUE)
+source("~/My Economics/Research/hdvar/program/testpkg/test_boostvar.R", echo=TRUE)
+cbind(t((a$beta_mat)[,,1,step])[,1],t((a$beta_mat)[,,2,step])[,1],t((a$beta_mat)[,,1,step])[,2],t((a$beta_mat)[,,2,step])[,2])
+cbind(t((a$p_mat)[,,1,step])[,1],t((a$p_mat)[,,2,step])[,1],t((a$p_mat)[,,1,step])[,2],t((a$p_mat)[,,2,step])[,2])
+b$varresult
+dim(a$beta_mat)
+(a$beta_mat)[,,1,200]
+(a$beta_mat)[,,2,200]
+cbind(b1,b2)
+cbind((a$beta_mat)[,,1,200],(a$beta_mat)[,,2,200])
+cbind(b1,b2)
+source("~/My Economics/Research/hdvar/program/testpkg/test_boostvar.R", echo=TRUE)
+source("~/My Economics/Research/hdvar/program/testpkg/test_boostvar.R", echo=TRUE)
+source("~/My Economics/Research/hdvar/program/testpkg/test_boostvar.R", echo=TRUE)
+source("~/My Economics/Research/hdvar/program/testpkg/test_boostvar.R", echo=TRUE)
+source("~/My Economics/Research/hdvar/program/testpkg/test_boostvar.R", echo=TRUE)
+source("~/My Economics/Research/hdvar/program/testpkg/test_boostvar.R", echo=TRUE)
+source("~/My Economics/Research/hdvar/program/testpkg/test_boostvar.R", echo=TRUE)
+summary(b)
+source("~/My Economics/Research/hdvar/program/testpkg/test_boostvar.R", echo=TRUE)
+source("~/My Economics/Research/hdvar/program/testpkg/test_boostvar.R", echo=TRUE)
+source("~/My Economics/Research/hdvar/program/testpkg/test_boostvar.R", echo=TRUE)
+source("~/My Economics/Research/hdvar/program/testpkg/test_boostvar.R", echo=TRUE)
+source("~/My Economics/Research/hdvar/program/testpkg/test_boostvar.R", echo=TRUE)
+print(n)
+print(d)
+p
+View(datay)
+dim(x)
+x[,,1]
+x[,,2]
+y
+x[,,1]
+j
+print(s)
+x[,j,s] %*% t(x[,j,s])
+d
+j
+print(s)
+beta[,j,s]
+beta[,1,1]
+t(y) %*% A_mat[,j,s]
+t(y) %*% t(A_mat[,j,s])
+dim(A_mat[,j,s])
+length(A_mat[,j,s])
+dim(y)
+t(y) %*% t(as.matrix(A_mat[,j,s]))
+t(y) %*% as.matrix(A_mat[,j,s])
+as.matrix(A_mat[,j,s])
+dim(res)
+dim(x[,j,s])
+length(x[,j,s])
+beta[,j,s]
+res_js
+as.matrix(x[,j,s]) %*% t(as.matrix(beta[,j,s]))
+res - as.matrix(x[,j,s]) %*% t(as.matrix(beta[,j,s]))
+res_js
+sum(res - as.matrix(x[,j,s]) %*% t(as.matrix(beta[,j,s])))
+sum(res_js)
+resid2_mat
+min_ind
+j_ind
+s_ind
+var_id
+beta[,j,s]
+step_mat
+step_mat
+min_list
+beta_mat[,j_ind,s_ind,k]
+beta[,j_ind,s_ind]
+A_mat[,j_ind,s_ind]
+c_coef
+dim(sig_mat)
+diag(sig2)
+diag(sig2) * Q
+diag(sig2)
+print(Q)
+sqrt(diag(sig2) * Q)
+2 * pnorm(-abs(beta_mat[,j_ind,s_ind,k] / sig_mat[,j_ind,s_ind,k]))
+source("~/My Economics/Research/hdvar/program/testpkg/test_boostvar.R", echo=TRUE)
+source("~/My Economics/Research/hdvar/program/testpkg/test_boostvar.R")
+step = 500
+cbind((a$beta_mat)[,,1,step],(a$beta_mat)[,,2,step])
+cbind((a$p_mat)[,,1,step],(a$p_mat)[,,2,step])
+cbind(b1,b2)
+source("~/My Economics/Research/hdvar/program/testpkg/test_boostvar.R", echo=TRUE)
+step = 800
+cbind((a$beta_mat)[,,1,step],(a$beta_mat)[,,2,step])
+cbind((a$p_mat)[,,1,step],(a$p_mat)[,,2,step])
+cbind(b1,b2)
+source("~/My Economics/Research/hdvar/program/testpkg/test_boostvar.R", echo=TRUE)
+dim(beta)
+dim(a$beta_mat)
+source("~/My Economics/Research/hdvar/program/testpkg/test_boostvar.R")
+step = 800
+cbind((a$beta_mat)[,,1,step],(a$beta_mat)[,,2,step])
+cbind((a$p_mat)[,,1,step],(a$p_mat)[,,2,step])
+cbind(b1,b2)
+library(boostvar)
+source("~/My Economics/Research/hdvar/program/testpkg/test_boostvar.R", echo=TRUE)
+step = 800
+cbind((a$beta_mat)[,,1,step],(a$beta_mat)[,,2,step])
+cbind((a$p_mat)[,,1,step],(a$p_mat)[,,2,step])
+cbind(b1,b2)
+debugSource("~/My Economics/Research/hdvar/program/forecast/forecast_boost_standard.R", echo=TRUE)
+dim(a$beta_mat)
+plot(a$aic)
+ntest
+dim(datay_test)
+y
+y = tail(datay_test, -p)
+y
+dim(beta)
+debugSource("~/My Economics/Research/hdvar/program/forecast/forecast_boost_standard.R", echo=TRUE)
+x
+dim(x)
+View(datay_test)
+dim(beta)
+dim(yhat)
+dim(beta)
+x[,,1]
+as.matrix(x[,,1])
+beta[,,1]
+dim(x)
+# Sum up the fitted value for each variable.
+yhat = matrix(0,ntest,d)
+for (s in 1:p) {
+yhat = yhat + t(beta[,,s] %*% as.matrix(x[,,s]))
+}
+yhat
+debugSource("~/My Economics/Research/hdvar/program/forecast/forecast_boost_standard.R", echo=TRUE)
+beta[,,s] %*% as.matrix(x[,,s])
+yhat
+print(s)
+source("~/My Economics/Research/hdvar/program/forecast/forecast_boost_standard.R", echo=TRUE)
+source("~/My Economics/Research/hdvar/program/forecast/forecast_boost_standard.R", echo=TRUE)
+rm(list = ls())
+dim(fred)
+#setwd("C:/Users/xhuang3/Documents/My Economics/Research/hdvar/program/testpkg")
+load("C:/Users/xhuang3/Documents/My Economics/Research/hdvar/program/testpkg/fred.Rda")
+fred
+aa = fred
+dim(aa)
+756*0.5
+source("~/My Economics/Research/hdvar/program/forecast/forecast_test_JuliaCall_OK.R", echo=TRUE)
+a$A
+dim(a$A)
+beta = a$A
+beta[,,1]
+beta
+dim(beta)
+beta[50]
+source("~/My Economics/Research/hdvar/program/forecast/forecast_boost_standard.R", echo=TRUE)
+sum(re^2) / (28)
+rm(list = ls())
+library(boostvar)
+macro$Date = as.Date(macro$Date, format = "%m\\%d\\%Y")
+#######################################################
+# Use the data in Wang, Zheng, Lian, and Li (2021) JASA.
+#######################################################
+macro = read.csv("C:/Users/xhuang3/Desktop/coding/julia/var-tensor/data/macro40.csv",
+header = TRUE)
+macro$Date = as.Date(macro$Date, format = "%m\\%d\\%Y")
+for (i in 2:dim(macro)[2]) {
+macro[,i] = scale(macro[,i], center = TRUE, scale = TRUE)
+}
+View(macro)
+dim(macro)
+dim(macro)[1] - start_line
+start_line = 167  # First line of prediction
+dim(macro)[1] - start_line
+source("~/My Economics/Research/hdvar/program/forecast/forecast_code.R", echo=TRUE)
+source("~/My Economics/Research/hdvar/program/forecast/forecast_code.R", echo=TRUE)
+library(boostvar)
+source("~/My Economics/Research/hdvar/program/testpkg/test_boostvar.R", echo=TRUE)
+library(boostvar)
+a = array(0,c(1,2,3))
+a
+library(boostvar)
+source("~/My Economics/Research/hdvar/program/testpkg/test_boostvar.R", echo=TRUE)
+source("~/My Economics/Research/hdvar/program/testpkg/test_boostvar.R")
+min_ind
+coef_id
+library(boostvar)
+source("~/My Economics/Research/hdvar/program/testpkg/test_boostvar.R", echo=TRUE)
+library(boostvar)
+source("~/My Economics/Research/hdvar/program/testpkg/test_boostvar.R", echo=TRUE)
+cbind((a$beta_mat)[,,1,step],(a$beta_mat)[,,2,step])
+source("~/My Economics/Research/hdvar/program/testpkg/test_boostvar.R", echo=TRUE)
+library(boostvar)
+source("~/My Economics/Research/hdvar/program/testpkg/test_boostvar.R", echo=TRUE)
+i_ind
+resid2_mat
+min_ind
+library(boostvar)
+source("~/My Economics/Research/hdvar/program/testpkg/test_boostvar.R", echo=TRUE)
+min_ind
+source("~/My Economics/Research/hdvar/program/testpkg/test_boostvar.R", echo=TRUE)
+library(boostvar)
+source("~/My Economics/Research/hdvar/program/testpkg/test_boostvar.R", echo=TRUE)
+a$min_list
+library(boostvar)
+source("~/My Economics/Research/hdvar/program/testpkg/test_boostvar.R", echo=TRUE)
+library(boostvar)
+library(boostvar)
+source("~/My Economics/Research/hdvar/program/testpkg/test_boostvar.R", echo=TRUE)
+library(boostvar)
+source("~/My Economics/Research/hdvar/program/testpkg/test_boostvar.R", echo=TRUE)
+coef_id
+coef_id
+library(boostvar)
+source("~/My Economics/Research/hdvar/program/testpkg/test_boostvar.R", echo=TRUE)
+cbind((a$beta_mat)[,,1,step],(a$beta_mat)[,,2,step])
+a$min_ind
+a$min_list
+source("~/My Economics/Research/hdvar/program/testpkg/test_boostvar.R", echo=TRUE)
+a$min_list
+cbind((a$beta_mat)[,,1,step],(a$beta_mat)[,,2,step])
+library(boostvar)
+source("~/My Economics/Research/hdvar/program/testpkg/test_boostvar.R", echo=TRUE)
+cbind((a$beta_mat)[,,1,step],(a$beta_mat)[,,2,step])
+cbind(b1,b2)
+a$min_list
+cbind(b1,b2)
+(a$beta_mat)[,,,step]
+library(boostvar)
+library(boostvar)
+source("~/My Economics/Research/hdvar/program/testpkg/test_boostvar.R")
+cbind((a$beta_mat)[,,1,step],(a$beta_mat)[,,2,step])
+cbind((a$p_mat)[,,1,step],(a$p_mat)[,,2,step])
+cbind(b1,b2)
+a
+a
+a$min_list
+library(boostvar)
+source("~/My Economics/Research/hdvar/program/testpkg/test_boostvar.R", echo=TRUE)
+coef_id
+k
+beta_mat[,,,k]
+beta_mat[,,,k-1]
+beta[j_ind, s_ind]
+j_ind
+s_ind
+i
+beta_mat[i,j_ind,s_ind,k-1] + nu * beta[j_ind, s_ind]
+beta_mat[i,j_ind,s_ind,k]
+beta_mat[i,j_ind,s_ind,k] = beta_mat[i,j_ind,s_ind,k-1] + nu * beta[j_ind, s_ind]
+beta_mat[,,,k-1]
+beta_mat[,,,k]
+coef_id
+k
+beta_mat[,,,k-1]
+source("~/My Economics/Research/hdvar/program/testpkg/test_boostvar.R", echo=TRUE)
+k
+beta_mat[,,,k]
+coef_id
+k
+library(boostvar)
+source("~/My Economics/Research/hdvar/program/testpkg/test_boostvar.R", echo=TRUE)
+library(boostvar)
+source("~/My Economics/Research/hdvar/program/testpkg/test_boostvar.R")
+cbind((a$beta_mat)[,,1,step],(a$beta_mat)[,,2,step])
+cbind(b1,b2)
+source("~/My Economics/Research/hdvar/program/testpkg/test_boostvar.R", echo=TRUE)
+cbind((a$beta_mat)[,,1,step],(a$beta_mat)[,,2,step])
+cbind((a$p_mat)[,,1,step],(a$p_mat)[,,2,step])
+cbind(b1,b2)
+a$min_list
+library(boostvar)
+source("~/My Economics/Research/hdvar/program/testpkg/test_boostvar.R", echo=TRUE)
+cbind((a$beta_mat)[,,1,step],(a$beta_mat)[,,2,step])
+cbind((a$p_mat)[,,1,step],(a$p_mat)[,,2,step])
+cbind(b1,b2)
+source("~/My Economics/Research/hdvar/program/testpkg/test_boostvar.R", echo=TRUE)
+cbind((a$beta_mat)[,,1,step],(a$beta_mat)[,,2,step])
+cbind((a$p_mat)[,,1,step],(a$p_mat)[,,2,step])
+cbind(b1,b2)
+source("~/My Economics/Research/hdvar/program/testpkg/test_boostvar.R", echo=TRUE)
+cbind((a$beta_mat)[,,1,step],(a$beta_mat)[,,2,step])
+cbind((a$p_mat)[,,1,step],(a$p_mat)[,,2,step])
+cbind(b1,b2)
+library(boostvar)
+source("~/My Economics/Research/hdvar/program/testpkg/test_boostvar.R", echo=TRUE)
+a$aic
+dim(a$aic)
+colMeans(a$aic)
+plot(a$aic)
+plot(colMeans(a$aic))
+plot(colSums(a$aic))
+library(boostvar)
+source("~/My Economics/Research/hdvar/program/testpkg/test_boostvar.R")
+cbind((a$beta_mat)[,,1,step],(a$beta_mat)[,,2,step])
+cbind((a$p_mat)[,,1,step],(a$p_mat)[,,2,step])
+cbind(b1,b2)
+source("~/My Economics/Research/hdvar/program/testpkg/test_boostvar.R", echo=TRUE)
+cbind((a$beta_mat)[,,1,step],(a$beta_mat)[,,2,step])
+cbind((a$p_mat)[,,1,step],(a$p_mat)[,,2,step])
+cbind(b1,b2)
+source("~/My Economics/Research/hdvar/program/testpkg/test_boostvar.R", echo=TRUE)
+source("D:/Econ 7710/chapter 21/chapter 21 program.R", echo=TRUE)
+source("D:/Econ 7710/chapter 21/chapter 21 program.R", echo=TRUE)
+reg_output
+summary(reg_output)
+source("D:/Econ 7710/chapter 23/chapter 23 program.R", echo=TRUE)
+dev.off()
+plot(regr)
+save <- par(mfrow=c(2,2))
+plot(regr)
+pairs(Mortgage)
+summary(regr)
+sales = read.csv("23_mall_sales.csv", header = TRUE)
+View(sales)
+colnames(sales) = c("sales", "income", "competitors", "size")
+View(sales)
+sales$sales = gsub("\\$", "", sales$sales)
+View(sales)
+sales$sales = as.numeric(sales$sales)
+paris(sales)
+pairs(sales)
+result = lm(sales ~ income + competitors, data = sales)
+summary(result)
+plot(fitted.values(result), residuals(result))
+abline(h=0, col='gray')
+hist(residuals(result), breaks=30)
+qqPlot(residuals(result))
+save <- par(mfrow=c(2,2))
+plot(result)
+write.csv(sales, "23_mall_sales_data.csv")
+write.csv(sales, "23_mall_sales_data.csv", row.names = FALSE)
+source("~/My Economics/Research/hdvar/program/simulation/simulation.R", echo=TRUE)
+coef.mat
+col.set
+source("~/My Economics/Research/hdvar/program/simulation/simulation.R", echo=TRUE)
+col.set
+beta[,,1]
+beta[,,2]
+head(coef.mat[,1:5])
+head(coef.mat[,6:10])
+library(boostvar)

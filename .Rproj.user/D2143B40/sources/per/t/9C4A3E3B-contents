@@ -1,0 +1,60 @@
+rm(list = ls())
+#setwd("C:/Users/xhuang3/Documents/My Economics/Research/hdvar/program/testLSBoost")
+library(boostvar)
+library(mboost)
+
+pros = read.csv("C:/Users/xhuang3/Documents/My Economics/Research/hdvar/program/testLSBoost/pros.csv", header = TRUE)
+pros = pros[, c("X", "lcavol", "lweight", "svi", "lbph", "pgg45", "lcp", "age", "gleason", "lpsa", "train")]
+
+pros_train = subset(pros, pros$train == TRUE)
+pros_test  = subset(pros, pros$train == FALSE)
+
+x = pros_train[,!colnames(pros_train) %in% c("lpsa", "X", "train")]
+y = pros_train[,c("lpsa")]
+
+a = boostls(y,x,bstop = 200, nu = 0.1)
+
+# The se output is removed in the github version. se_mat refers to
+# the se for the selected varaible at step k, not accumulated.
+# In the github version, The name "se_mat" now refers to sig_mat in
+# the c++ code. 2022-11-2.
+# se_index = (a$se_mat)[4,] != 0
+# sedif = (a$se_mat)[4,][se_index] - (a$sig_mat)[4,][se_index]
+# plot(sedif)
+
+# Check the mboost package. 
+a0 = glmboost(as.matrix(x), y, control = boost_control(mstop = 200, nu = 0.1))
+
+# Check the AIC-based stopping number
+c(which.min(a$aic), mstop(AIC(a0, method = "corrected")))
+
+# Check coefficient.
+coef(a0[53])
+(a$beta)[,53]
+
+# Nest we simulate a linear model to check the convergence of the s.e.
+
+
+
+
+
+
+
+
+#a$beta[,1:5]
+
+# Compute the test error as in Table 3.3 in ESL.
+# x_new = pros_test[,!colnames(pros_test) %in% c("lpsa", "X", "train")]
+# y_new = pros_test[,c("lpsa")]
+# 
+# b0 = mean(y_new) - colMeans(x_new) %*% a$beta[,a$aic_info[1]]
+
+# Check mboost package output
+#a0 = glmboost(as.matrix(x), y, control = boost_control(mstop = 500, nu = 0.1))
+
+# Check the AIC-based stopping number
+#c(a$aic_info[1], mstop(AIC(a0, method = "corrected")))
+
+# Check two solution are the same at step = 50
+# a$beta[,50]
+# coef(a0[50])

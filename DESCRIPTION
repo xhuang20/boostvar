@@ -1,0 +1,19 @@
+Package: boostvar
+Type: Package
+Title: Boosted p-Values for High-dimensional Vector Autoregression
+Version: 1.0.0
+Date: 2022-11-1
+Author: Xiao Huang
+Maintainer: Xiao Huang <xiao_huang@outlook.com>
+Description: This package computes the p-value for the two least-squares
+    boosting (LS-Boost) algorithms in high-dimensional vector autogression 
+    described in Huang (2022). It computes a p-value for every LS-Boost estimate
+    at each boosting step.
+License: GPL (>= 2)
+Imports: Rcpp, RcppEigen
+LinkingTo: Rcpp, RcppEigen
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+Roxygen: list(markdown = TRUE)
+URL: https://github.com/xhuang20/boostvar
+
